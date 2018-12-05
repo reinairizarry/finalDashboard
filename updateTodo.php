@@ -1,5 +1,6 @@
 <?php
   $object = $_GET['object']; //receives as string
+  echo("Received data: $object");
   $object = json_decode($object,true);//converts string to object
   $title = $object['title'];
   //open and load JSON file
